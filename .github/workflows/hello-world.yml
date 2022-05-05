@@ -4,6 +4,9 @@ name: Hello World!
 on:
   push:
   workflow_dispatch:
+  
+env:
+  GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
 
 jobs:
   greet:
